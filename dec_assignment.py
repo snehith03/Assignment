@@ -1,5 +1,5 @@
 ->Data types in python
-#List in python
+#LIST in python
  ->It is a ordered collection of datypes.
  ->Represented by->[]
  ->Lists are used to store multiple items in a single variable.
@@ -54,4 +54,32 @@
   del mylist
   print(mylist)  
   o/p:   NameError: name 'mylist' is not defined   #list got deleted
+  
+  
+  #TUPLES in python
+  ->Tuples are used to store multiple items in a single variable.
+  ->Tuple is one of 4 built-in data types in Python.
+  ->It is an ordered collection.
+  ->They are immutable.
+  ->Represented using->()
+  ->Tuples allow duplicates since they are indexed.
+  #Examples
+  #printing the tuple
+  mytuple = ("tiger","Lion")
+  print(mytuple)
+  o/p:('tiger', 'Lion')
+  #Length of tuple
+  print(len(mytuple))
+  o/p:2
+  #When you create a tuple with only 1 item you need to place a , after it otherwise it will not be cosidered as tuple.
+  mytuple = ("snehith",)
+  print(type(mytuple))
+  <class 'tuple'>
+  #NOT a tuple
+  mytuple = ("snehith")
+  print(type(mytuple))
+  <class 'str'>
+
+  
+  #DICTIONARIES in python
   
