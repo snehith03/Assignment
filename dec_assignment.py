@@ -1,2 +1,57 @@
 ->Data types in python
-->List in python
+#List in python
+ ->It is a ordered collection of datypes.
+ ->Represented by->[]
+ ->Lists are used to store multiple items in a single variable.
+ ->Lists are one of 4 built-in data types in Python.
+ ->They are mutable(changable).
+ ->Lists are ordered.
+ ->Lists allow duplicate values.
+  #Examples
+  #printing the list,same data type.
+  list = ["apple", "mango", "cherry"]
+  print(list)
+  #using constructor
+  list = list(("apple", "mango", "cherry")) 
+  print(list)
+  o/p:['apple', 'mango', 'cherry']
+  #operations on list  
+  #printing the index value
+  name="snehith"
+  print(name.index("h"))
+  o/p:3
+  #changing the values
+  mylist=[5,67.89,"python","yes",3,5,6]
+  mylist[-3]=True
+  print("List after updation",mylist)
+  o/p:List after updation [5, 67.89, 'python', 'yes', True, 5, 6]
+  #printing only certain values
+  print(mylist[2:4])
+  o/p:['python', 'yes']
+  # Appending element to list
+  mylist.append(2)
+  print("Appending values to the list",mylist)
+  c=["hi",10,9]
+  # Extending the list(adding more than one element to list)
+  mylist.extend(c)
+  print("extending values of list",mylist)
+  # Inserting values(not in order)
+  mylist.insert(7,11)
+  print("List after insertion",mylist)
+  # Deleting a certain values by giving it's index
+  del mylist[0]
+  print("List after deleting the values",mylist)
+  # Removing a value directly
+  mylist.remove("hi")
+  print("List after removing values",mylist)
+  o/p:
+    Appending values to the list [5, 67.89, 'python', 'yes', True, 5, 6, 2]
+    extending values of list [5, 67.89, 'python', 'yes', True, 5, 6, 2, 'hi', 10, 9]
+    List after insertion [5, 67.89, 'python', 'yes', True, 5, 6, 11, 2, 'hi', 10, 9]
+    List after deleting the values [67.89, 'python', 'yes', True, 5, 6, 11, 2, 'hi', 10, 9]
+    List after removing values [67.89, 'python', 'yes', True, 5, 6, 11, 2, 10, 9]
+  # deleting entire list
+  del mylist
+  print(mylist)  
+  o/p:   NameError: name 'mylist' is not defined   #list got deleted
+  
